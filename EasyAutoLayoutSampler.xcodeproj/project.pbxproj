@@ -12,7 +12,23 @@
 		D3B75003231A98DB00ABE53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B75001231A98DB00ABE53C /* Main.storyboard */; };
 		D3B75005231A98DB00ABE53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B75004231A98DB00ABE53C /* Assets.xcassets */; };
 		D3B75008231A98DB00ABE53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B75006231A98DB00ABE53C /* LaunchScreen.storyboard */; };
+		D3B75010231A994300ABE53C /* EasyAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B7500F231A994300ABE53C /* EasyAutoLayout.framework */; };
+		D3B75011231A994300ABE53C /* EasyAutoLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3B7500F231A994300ABE53C /* EasyAutoLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3B75012231A994300ABE53C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3B75011231A994300ABE53C /* EasyAutoLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D3B74FFA231A98DB00ABE53C /* EasyAutoLayoutSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyAutoLayoutSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		D3B75004231A98DB00ABE53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3B75007231A98DB00ABE53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3B75009231A98DB00ABE53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B7500F231A994300ABE53C /* EasyAutoLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyAutoLayout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B75010231A994300ABE53C /* EasyAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		D3B74FF1231A98DB00ABE53C = {
 			isa = PBXGroup;
 			children = (
+				D3B7500F231A994300ABE53C /* EasyAutoLayout.framework */,
 				D3B74FFC231A98DB00ABE53C /* EasyAutoLayoutSampler */,
 				D3B74FFB231A98DB00ABE53C /* Products */,
 			);
@@ -74,6 +93,7 @@
 				D3B74FF6231A98DB00ABE53C /* Sources */,
 				D3B74FF7231A98DB00ABE53C /* Frameworks */,
 				D3B74FF8231A98DB00ABE53C /* Resources */,
+				D3B75012231A994300ABE53C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +304,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EasyAutoLayoutSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +326,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = EasyAutoLayoutSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

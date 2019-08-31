@@ -1,0 +1,11 @@
+framework module EasyAutoLayout {
+  umbrella header "EasyAutoLayout.h"
+
+  export *
+  module * { export * }
+}
+
+module EasyAutoLayout.Swift {
+    header "EasyAutoLayout-Swift.h"
+    requires objc
+}
